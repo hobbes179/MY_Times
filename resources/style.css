@@ -3,11 +3,15 @@ header {
   font-size: 14px;
   font-weight: bold;
   border-bottom: 1px solid black;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  z-index: 2;
 }
 
 nav{
@@ -23,8 +27,8 @@ header li {
   margin: 0 10px;
 }
 
-p {
-  margin:0;
+p, h1, h2, h3{
+  margin:16;
 }
 
 div {
@@ -41,6 +45,9 @@ div {
 main {
   display:flex;
   position: relative;
+  margin-bottom: 200px;
+  font-family: Georgia;
+  font-size: 17px;
   top: 81px;
   border: 1px solid black;
   width: 1200px;
@@ -51,7 +58,7 @@ news {
 }
 
 .column {
-  margin: 15px 15px 0 0;
+  margin: 32px 32px 0 0;
   display:flex;
   flex-direction: column;
 }
@@ -66,4 +73,22 @@ news {
 
 .column.small{
   width:240px;
+}
+
+.imgtitle {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color:white;
+  height: 300px;
+  font-size:30px;
+  font-weight: bold;
+  margin-top:15px;
+}
+
+.headline {
+  font-size: 40px;
+  justify-content: flex-start;
+  text-align: left;
+  margin-top:0;
 }
