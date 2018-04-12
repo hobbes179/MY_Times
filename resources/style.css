@@ -32,7 +32,7 @@ p, h1, h2, h3{
 }
 
 div {
-  border: 1px solid black;
+
 }
 
 .logo {
@@ -43,13 +43,14 @@ div {
 }
 
 main {
-  display:flex;
+  display: flex;
   position: relative;
+  margin: 0 auto;
+  justify-content: center;
   margin-bottom: 200px;
   font-family: Georgia;
   font-size: 17px;
   top: 81px;
-  border: 1px solid black;
   width: 1200px;
 }
 
@@ -75,6 +76,23 @@ news {
   width:240px;
 }
 
+.mainstory{
+
+}
+
+.stories {
+  display: flex;
+  justify-content: space-between;
+}
+
+.story {
+  flex-direction: column;
+}
+
+.snippet {
+  height: 220px;
+}
+
 .imgtitle {
   display: flex;
   justify-content: center;
@@ -86,9 +104,13 @@ news {
   margin-top:15px;
 }
 
-.headline {
+.imgtitle.headline {
   font-size: 40px;
   justify-content: flex-start;
   text-align: left;
   margin-top:0;
+}
+
+.half {
+  width: 48%;
 }
