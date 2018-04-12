@@ -23,9 +23,47 @@ header li {
   margin: 0 10px;
 }
 
+p {
+  margin:0;
+}
+
+div {
+  border: 1px solid black;
+}
+
 .logo {
   display: flex;
   align-items: center;
   color: MediumAquamarine;
   margin: 5px 10px;
+}
+
+main {
+  display:flex;
+  position: relative;
+  top: 81px;
+  border: 1px solid black;
+  width: 1200px;
+}
+
+news {
+  display:flex;
+}
+
+.column {
+  margin: 15px 15px 0 0;
+  display:flex;
+  flex-direction: column;
+}
+
+.column.large{
+  width:630px;
+}
+
+.column.medium{
+  width:300px;
+}
+
+.column.small{
+  width:240px;
 }
