@@ -22,17 +22,13 @@ nav a{
   color:black;
 }
 
-header li {
+nav li {
   display: inline-block;
   margin: 0 10px;
 }
 
 p, h1, h2, h3{
   margin:16;
-}
-
-div {
-
 }
 
 .logo {
@@ -51,13 +47,13 @@ main {
   font-family: Georgia;
   font-size: 17px;
   top: 81px;
-  width: 1200px;
 }
 
 .column {
-  margin: 32px 32px 0 0;
+  margin: 16px;
   display:flex;
   flex-direction: column;
+  flex-shrink: 0;
 }
 
 .column.large{
@@ -92,6 +88,7 @@ main {
 .imgtitle {
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
   color:white;
   height: 300px;
@@ -108,7 +105,7 @@ main {
 }
 
 .half {
-  width: 48%;
+  width: 300px;
 }
 
 .newsbites {
@@ -131,4 +128,32 @@ main {
   color: dimgray;
   font-family: Verdana;
   font-size: 12px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 325px;
+  width: 100%;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  background-color: MediumAquamarine;
+}
+
+.brand {
+  border-right: 2px solid white;
+  color: white;
+  padding-right: 18px;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.flexcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
